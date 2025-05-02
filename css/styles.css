@@ -19,6 +19,61 @@ html body {
     transition: color 0.3s;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: #b4d234; /* Cambia el color del borde alrededor del icono */
+  }
 
 
+  
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23b4d234' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+
+  
+
+.carousel-indicators {
+    margin-bottom: 30px;
+}
+  
+.carousel-indicators [data-bs-target] {
+    all: unset; /* Reinicia todos los estilos heredados */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    /* opacity: 0.5; */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+  
+.carousel-indicators [data-bs-target]::before {
+    content: none !important; /* Elimina pseudo-elementos que generan la forma de pastilla */
+}
+  
+.carousel-indicators .active {
+    background-color: #b4d234;
+    opacity: 1;
+}
+  
+
+
+.footer {
+    background-color: #6f2f73;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #b4d234;
+
+}
+
+.footer a {
+    color: #b4d234;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
