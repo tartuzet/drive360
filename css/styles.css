@@ -1,5 +1,5 @@
 html body {
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
   }
 
 p{
@@ -131,4 +131,64 @@ h2{
     margin-right: 10px;
 
   }
-  
+
+
+/* SOLO para brandCarousel */
+#brandCarousel .slide-btn {
+  opacity: 1 !important;
+  background: transparent;
+  border: none;
+}
+
+#brandCarousel .slide-btn i {
+  font-size: 40px;
+  color: #b4d234;
+}
+
+#brandCarousel .carousel-control-prev {
+  left: -80px;
+}
+
+#brandCarousel .carousel-control-next {
+  right: -80px;
+}
+
+#brandCarousel .carousel-item > div {
+  flex-wrap: wrap;
+  gap: 10px;
+  display: flex;
+}
+
+#brandCarousel .carousel-item img {
+  max-height: 150px;
+}
+
+/* Ajustes solo en móviles para brandCarousel */
+@media (max-width: 767px) {
+  #brandCarousel .carousel-item > div {
+    justify-content: center !important;
+  }
+
+  #brandCarousel .carousel-item img {
+    max-height: 80px;
+    flex: 0 0 30%;
+  }
+
+  #brandCarousel .carousel-control-prev,
+  #brandCarousel .carousel-control-next {
+    top: -25%;
+    /* transform: translateY(-50%); */
+  }
+
+  #brandCarousel .carousel-control-prev {
+    left: 10px;
+  }
+
+  #brandCarousel .carousel-control-next {
+    right: 10px;
+  }
+
+  #brandCarousel .slide-btn i {
+    font-size: 32px;
+  }
+}
