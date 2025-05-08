@@ -49,6 +49,18 @@ h3{
     color: #b4d234 !important; /* color del texto */
     margin-right: 10px;
     transition: color 0.3s;
+    position: relative; /* Necesario para el posicionamiento de la línea */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+.nav-link:hover::after {
+  content: ""; /* Crea un contenido vacío para la línea */
+  position: absolute; /* Posiciona la línea de forma absoluta */
+  left: 0; /* Alinea la línea a la izquierda del texto */
+  bottom: -1px; /* Ajusta la posición vertical de la línea */
+  width: 100%; /* La línea ocupará todo el ancho del texto */
+  height: 2px; /* Altura de la línea */
+  background-color: #b4d234; /* Color de la línea (puedes cambiarlo) */
+  transition: all 0.3s ease; /* Transición suave */
 }
 
 .navbar-light .navbar-toggler {
@@ -208,5 +220,9 @@ h3{
 a {
   color: inherit; /* Hereda el color del elemento padre */
   text-decoration: none; /* Quita el subrayado */
+}
+
+a:hover {
+  color: #b4d234 !important; /* Cambia este color al que tú desees */
 }
 
